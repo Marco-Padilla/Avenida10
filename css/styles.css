@@ -161,7 +161,7 @@ body {
 
 .cta-social h4 {
   font-weight: 600;
-  color: #ffc107;
+  color: #fac800;
 }
 
 .social-icon {
@@ -212,4 +212,17 @@ body {
   color: #fac800;
   transform: translateY(-10%) scale(1.1);
   transition: all 0.3s ease;
+}
+
+.sponsors-section {
+  background-color: #c7c7b7;
+}
+
+.sponsors-section .card{
+  background-color: #f1cf45;
+  filter: drop-shadow(1px 1px 5px black);
+}
+
+.sponsors-section img{
+  filter: drop-shadow(1px 1px 20px white);
 }
