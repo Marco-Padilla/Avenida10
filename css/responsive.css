@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Estilos móviles por defecto */
 .logo img {
   height: 32px;
@@ -83,3 +84,90 @@ form input {
     font-size: 2rem;
   }
 }
+=======
+/* Estilos móviles por defecto */
+.logo img {
+  height: 32px;
+}
+
+form input {
+  font-size: 0.9rem;
+}
+
+.sub-nav .nav-link {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Corrección para pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .search-btn {
+    position: static; /* o relative si necesitas controlarlo dentro de un contenedor */
+    transform: none;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+/* Tablets (mínimo 768px) */
+@media (min-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
+
+  .sub-nav .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  form input {
+    font-size: 1rem;
+  }
+}
+
+/* Escritorio (mínimo 992px) */
+@media (min-width: 992px) {
+  .sub-nav {
+    justify-content: center;
+  }
+
+  .sub-nav .nav-link {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+}
+
+/* Responsive ajustes */
+@media (max-width: 767.98px) {
+  .hero-categories {
+    display: none;
+  }
+
+  .hero-slider {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ubicacion-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .ubicacion-dropdown .dropdown-menu {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .categorias-destacadas h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ofertas-semana h2 {
+    font-size: 2rem;
+  }
+}
+>>>>>>> e3f376646455b338075b438b3159fe3e6b8fc8c3

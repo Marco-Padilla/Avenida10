@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -296,3 +297,303 @@
     <script src="/public/js/sede.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Supermercado Avenida 10" />
+    <meta name="keywords" content="supermercado, ofertas, productos frescos" />
+    <title>Avenida 10 - Nosotros</title>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <!-- Bootstrap y fuentes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Header fijo -->
+    <header class="main-header fixed-top bg-white">
+      <!-- Top Header -->
+      <div class="container-fluid py-2 px-3">
+        <div class="row align-items-center gx-2">
+          <!-- Logo y Sedes -->
+          <div class="col-auto d-flex align-items-center">
+            <!-- Logo -->
+            <a href="index.html"
+              ><img
+                src="icons/logo-04.png"
+                alt="Logo Avenida 10"
+                height="50"
+            /></a>
+
+            <!-- Sedes -->
+            <div class="dropdown ubicacion-dropdown ms-4">
+              <button
+                class="btn dropdown-toggle ubicacion-btn"
+                type="button"
+                id="dropdownSedes"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-geo-alt-fill me-1"></i>
+                <span id="nombreSede">Avenida 10</span>
+              </button>
+              <ul class="dropdown-menu p-3" aria-labelledby="dropdownSedes">
+                <li>
+                  <strong class="text-warning d-block">Avenida 10</strong>
+                  <p class="mb-1 text-muted small">
+                    <strong>Dirección: </strong>Av. 10, San José, Los Silos.
+                  </p>
+                  <p class="mb-1 text-muted small">
+                    <strong>Horario:</strong> Lunes a Domingo de 8:00 a.m. a
+                    8:00 p.m.
+                  </p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0223148757327!2d-84.09813972631578!3d9.932099374202155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3c62c42a0d9%3A0x292d1e2330aa2149!2sSupermercado%20Avenida%2010!5e0!3m2!1ses-419!2scr!4v1747108454703!5m2!1ses-419!2scr"
+                    width="300"
+                    height="200"
+                    style="border-radius: 20px; border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Botón de lupa en móvil -->
+          <div class="col-auto d-md-none">
+            <button
+              class="btn search-btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasSearch"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+          <!-- Buscador en desktop -->
+          <div class="col ms-5 d-none d-md-block">
+            <form class="d-flex w-100 search-wrapper" role="search">
+              <input
+                class="form-control search-input"
+                type="search"
+                placeholder="Buscar productos..."
+              />
+              <button class="btn search-btn ms-1" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submenú fijo -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light border-top sticky-top mt-header"
+      >
+        <div class="container-fluid px-3">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSubmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSubmenu">
+            <ul
+              class="navbar-nav w-100 d-flex justify-content-around flex-wrap text-center py-2"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="html/categorias.html"
+                  >Categorías</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/superpromos.html"
+                  >SuperPromos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/sf.html"
+                  >Siempre Fresco</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/transporte.html"
+                  >Transporte</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Offcanvas de búsqueda móvil -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasSearch">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Buscar</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Buscar productos..."
+          />
+          <button class="btn btn-primary" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Margen para evitar solapamiento -->
+    <div style="height: 150px"></div>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="py-3 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Imagen: en móvil va arriba -->
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <img
+              src="/public/images/sobre-nosotros.jpg"
+              alt="Sobre Nosotros"
+              class="img-fluid rounded-4 shadow w-100"
+            />
+          </div>
+
+          <!-- Texto -->
+          <div class="col-12 col-md-6">
+            <h2 class="mb-2 text-center text-md-start">Sobre Nosotros</h2>
+            <p class="text-muted text-center text-md-start">
+              Somos una empresa comprometida con la excelencia y el crecimiento
+              constante. Nuestro equipo está formado por profesionales
+              apasionados que buscan innovar y ofrecer el mejor servicio a
+              nuestros clientes.
+            </p>
+            <p class="text-muted text-center text-md-start">
+              Creemos en los valores humanos, el trabajo en equipo y el
+              desarrollo continuo para construir un futuro sólido y responsable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Call to Action -->
+    <section class="py-5 text-center bg-primary text-white">
+      <div class="container">
+        <h3 class="mb-3">¿Te interesa saber más o trabajar con nosotros?</h3>
+        <a href="html/contacto.html" class="btn btn-light btn-lg">Contáctanos</a>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light pb-3">
+      <div class="container">
+        <div class="row gy-4 text-center text-md-start">
+          <!-- Sección 1: Información -->
+          <div class="col-12 col-md-4">
+            <h5>Supermercado Avenida 10</h5>
+            <p>
+              Tu mercado de confianza con productos frescos y ofertas todos los
+              días.
+            </p>
+          </div>
+
+          <!-- Sección 2: Enlaces útiles -->
+          <div class="col-12 col-md-4">
+            <h5>Enlaces útiles</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="html/categorias.html">Categorías</a>
+              </li>
+              <li>
+                <a href="html/preguntas.html">Preguntas Frecuentes</a>
+              </li>
+              <li>
+                <a href="html/contacto.html">Contáctanos</a>
+              </li>
+              <li>
+                <a href="html/trabajo.html">Trabajá con nosotros</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Sección 3: Contacto -->
+          <div class="col-12 col-md-4">
+            <h5>Contacto</h5>
+            <p>
+              <i class="bi bi-envelope-fill"></i>
+              communitymanager@superavenida10.com
+            </p>
+            <p>
+              <a
+                href="https://wa.me/50670608121"
+                target="_blank"
+                class="btn btn-sm btn-warning text-dark"
+              >
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a>
+            </p>
+            <p><i class="bi bi-geo-alt-fill"></i> San José, Costa Rica</p>
+          </div>
+        </div>
+
+        <hr class="border-light mt-4" />
+
+        <div class="text-center">
+          <small
+            >&copy; 2025 Supermercado Avenida10. Todos los derechos
+            reservados.</small
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sede.js"></script>
+  </body>
+</html>
+>>>>>>> e3f376646455b338075b438b3159fe3e6b8fc8c3
