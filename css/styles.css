@@ -1,0 +1,228 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  background-color: #ffffff; /* color corporativo oficial */
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sub-nav {
+  background-color: #fff3cd;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #fac800;
+  transform: translateY(-10%) scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* === Nuevos estilos para buscador con lupa === */
+
+.search-wrapper {
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.search-input {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border-color: 1px solid #575757;
+  width: 100%;
+  outline: none;
+}
+
+.search-btn {
+  background-color: #fac800;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-btn i {
+  color: #000;
+  font-size: 1rem;
+}
+
+.search-btn:hover {
+  transform: translateY(-50%) scale(1.1); /* Zoom al hacer hover */
+}
+
+.ubicacion-btn {
+  border: 1px solid #575757;
+  border-radius: 8px;
+  color: #fac800;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ubicacion-btn:hover,
+.ubicacion-btn:focus {
+  color: #fac800;
+  background-color: rgba(250, 200, 0, 0.1);
+}
+
+.ubicacion-dropdown .dropdown-menu {
+  min-width: 220px;
+  border-radius: 10px;
+  z-index: 1050; /* asegurar que esté sobre otros elementos */
+}
+
+.hero-banner {
+  margin-top: 100px; /* ajustar si hay header fijo */
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  border-radius: 0px 0px 30px 30px;
+}
+
+.categories-list {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  padding: 1rem 0;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.categories-list .list-group-item {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.list-group li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+
+.list-group li a:hover {
+  color: #fac800;
+  transform: translateY(-10%) scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.carousel-caption {
+  top: 75%;
+}
+
+.categoria-card {
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.categoria-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.categorias-destacadas h2 {
+  font-size: 1.5rem;
+}
+
+.ofertas-semana h2 {
+  font-size: 1.5rem;
+}
+
+.oferta-card img {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.cta-social {
+  background-color: #1e1e1e;
+}
+
+.cta-social h4 {
+  font-weight: 600;
+  color: #fac800;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 2rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social-icon:hover {
+  color: #fac800;
+  transform: scale(1.2);
+}
+
+/* Estilo para los botones (sin fondo, sin borde) */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent !important;
+  border: none;
+}
+
+/* Cambiar el color del icono a amarillo */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  width: 2rem;
+  height: 2rem;
+  /* Usamos un ícono personalizado en SVG con color amarillo */
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fac800' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+  background-color: #fac800;
+}
+
+.carousel-control-next-icon {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fac800' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+.boton-oferta a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.list-unstyled li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.list-unstyled li a:hover {
+  color: #fac800;
+  transform: translateY(-10%) scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.sponsors-section {
+  background-color: #c7c7b7;
+}
+
+.sponsors-section .card{
+  background-color: #f1cf45;
+  filter: drop-shadow(1px 1px 5px black);
+}
+
+.sponsors-section img{
+  filter: drop-shadow(1px 1px 20px white);
+}
